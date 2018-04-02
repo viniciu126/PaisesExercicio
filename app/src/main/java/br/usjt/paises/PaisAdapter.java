@@ -12,10 +12,10 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-/**
- * Created by vinic on 01/04/2018.
- */
+ /**
+     * @author Vinicius Maciel
+     * RA 816117960
+     */
 
 public class PaisAdapter extends BaseAdapter {
 
@@ -26,12 +26,18 @@ public class PaisAdapter extends BaseAdapter {
         this.contexto = contexto;
         this.paises = paises;
     }
-
+ /**
+     * @author Vinicius Maciel
+     * RA 816117960
+     */
     @Override
     public int getCount(){
         return paises.length;
     }
-
+ /**
+     * @author Vinicius Maciel
+     * RA 816117960
+     */
     @Override
     public Object getItem(int position){
         if(position >= 0 && position < paises.length){
@@ -40,12 +46,18 @@ public class PaisAdapter extends BaseAdapter {
             return null;
         }
     }
-
+ /**
+     * @author Vinicius Maciel
+     * RA 816117960
+     */
     @Override
     public long getItemId(int position){
         return position;
     }
-
+ /**
+     * @author Vinicius Maciel
+     * RA 816117960
+     */
     @Override
     public View getView(int position, View convertView, ViewGroup parent){
         View view;
